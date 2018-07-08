@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1531044294424
+Build-Jdk: 1.8.0_171
+Built-By: hadoop
+Bundle-ClassPath: .,lib/guava-13.0.1.jar
+Bundle-ManifestVersion: 2
+Bundle-Name: kmer
+Bundle-SymbolicName: kmer
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Embed-Dependency: *;inline=false;scope=compile
+Embed-Directory: lib
+Embed-Transitive: true
+Embedded-Artifacts: lib/guava-13.0.1.jar;g="com.google.guava";a="guava";
+ v="13.0.1"
+Export-Package: kmer;uses:="org.apache.spark.api.java.function,scala,org
+ .apache.spark.broadcast,org.apache.spark.api.java,org.apache.spark";ver
+ sion="1.0.0"
+Import-Package: javax.annotation;version="[1.2,2)",org.apache.spark,org.
+ apache.spark.api.java,org.apache.spark.api.java.function,org.apache.spa
+ rk.broadcast,scala;version="[2.10,3)",sun.misc
+Main-Class: kmer.Kmer
+Tool: Bnd-1.50.0
